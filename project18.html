@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Project 18 - Positioning</title>
+    <style>
+      .felt {
+         width: 300px;
+         height: 300px;
+         background-image: url('images/felt.jpg');
+         background-color: green;
+         position: relative;
+         top: 25px;
+         left: 25px;
+       }
+      .queencard {
+        z-index: 4;
+        float: clear;
+        position: absolute;
+        top: 100px;
+      }
+      .kingcard {
+        z-index: 3;
+        float: clear;
+        position: absolute;
+        top: 75px;
+      }
+      .tenofdiamonds {
+        z-index: 6;
+        float: clear;
+        position: absolute;
+        top: 150px;
+      }
+      .jackcard {
+        z-index: 5;
+        float: clear;
+        position: absolute;
+        top: 125px;
+      }
+      .cardback {
+        z-index: 2;
+        float: clear;
+        position: absolute;
+        top: 50px;
+      }
+      .gradient {
+        background-image: url('images/gradient.jpg');
+        background-repeat: repeat-x;
+        background-color: gray;
+      }
+    </style>
+  </head>
+  
+  <body class="gradient">
+   <div class="felt">
+    <img src="images/tendiamonds.png" class="tenofdiamonds" width="64" height="100" alt="Ten of Diamonds" />
+    <img src="images/queenhearts.png" class="queencard" width="64" height="100" alt="Queen card" />
+    <img src="images/kingspades.png" class="kingcard" width="64" height="100" alt="King card" />
+    <img src="images/jackclubs.png" class="jackcard" width="64" height="100" alt="Jack card" />
+    <img src="images/card.png" class="cardback" width="64" height="100" alt="Back of the card" />
+   </div>
+  </body>
+
+</html>
